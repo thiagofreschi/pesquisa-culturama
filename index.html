@@ -125,9 +125,32 @@
                     <option value="Pagode">
                 </datalist>
                 <br>
-            <label for="favoriteColor">Cor Favorita</label>
-            <input type="color" id="favoriteColor" name="userFavoriteColor">
+                 <label for="favoriteColor">Cor Favorita</label>
+                 <input type="color" id="favoriteColor" name="userFavoriteColor">
+            </fieldset>
+            <fieldset>
+            <legend>Dê sua opinião</legend>
+            <br>
+                
+                <input type="radio" id="excellent" name="userOpnion" value="Ótimo">
+                <label for="excellent">Ótimo</label>
+                <br>
+                
+                <input type="radio" id="good" name="userOpnion" value="Bom">
+                <label for="good">Bom</label>
+                
+                <br>
 
+                <input type="radio" id="regular" name="userOpnion" value="Regular">
+                <label for="regular">Regular</label>    
+                
+                <br>
+
+                <input type="radio" id="bad" name="userOpnion" value="Ruim">
+                <label for="bad">Ruim</label>
+                <br>
+
+                <textarea name="userOpnion" id="opnion" cols="30" rows="10" placeholder="Digite sua opinião..."></textarea>
             </fieldset>
 
             <button type="submit">Enviar</button>
