@@ -49,28 +49,33 @@
             <fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero</p>
-                <input type="radio" id="Feminine"name="userGender" value="Feminino">
-                <label for="Feminine">Feminino</label>
                 <br>
-
-                <input type="radio" id="Masculine"name="userGender" value="Masculino">
-                <label for="Masculine">Masculino</label>
+                <div>
+                    <input type="radio" id="Feminine"name="userGender" value="Feminino">
+                    <label for="Feminine">Feminino</label>
                 <br>
+                
+                    <input type="radio" id="Masculine"name="userGender" value="Masculino">
+                    <label for="Masculine">Masculino</label>
+                    <br>
 
-                <input type="radio" id="Not"name="userGender" value="Prefiro nãoresponder">
-                <label for="Not">Prefiro não responder<label>
+                    <input type="radio" id="Not"name="userGender" value="Prefiro nãoresponder">
+                    <label for="Not">Prefiro não responder<label>
+                </div>
                 <br><br>
-
-                <label for="maritalStatus">Estado Civel<label>
-                <select name="userMatitalStatus" id="maritalStatus">
+                <div class="estadoCivel">
+                    <label for="maritalStatus">Estado Civel<label>
+                </div>
+                <select name="userMatitalStatus"          id="maritalStatus">
                     <option value="notInformed">Selecione..</option>
                     <option value="Casado">Casado</option>
                     <option value="Solteiro">Solteiro<option>
-                    <option value="Divorciado">Divorciado<option>            
-                    </select>
-                    <br><br>
+                    <option value="Divorciado">Divorciado<option>
+                </select>
+                
+                <br><br>
                 <label for="State">Estado</label>
-                <select name="userState" id="State">
+                <select name="userState" id="State" required>
                     <option value="notInformed">Selecione...</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
@@ -102,7 +107,7 @@
                 </select>
                     <br><br>
                     <label for="City">Cidade</label>
-                    <input type="text" id="City" name="userCity" autocomplete="address-level2" placeholder="São Paulo">
+                    <input type="text" id="City" name="userCity" autocomplete="address-level2" placeholder="São Paulo", required>
             </fieldset>
             <!--Hábitos-->
             <fieldset>
@@ -160,7 +165,7 @@
                 <label for="bad">Ruim</label>
                 <br>
 
-                <textarea name="userOpnion" id="opnion" cols="30" rows="10" placeholder="Digite sua opinião..."></textarea>
+                <textarea name="userOpnion" id="opnion" cols="30" rows="10" placeholder="Digite sua opinião...", required></textarea>
             </fieldset>
             <fieldset>
                 <legend>Confirmações</legend>

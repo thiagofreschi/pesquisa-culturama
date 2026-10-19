@@ -38,6 +38,60 @@ legend{
     padding: 0 5px;
 }
 
+label{
+    display: inline-block;
+    margin-bottom: 5px;}
+
+estadoCivel label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
 body{fonte-family: 'Work Sans', sans-serif;}
 
 h1{font-family: 'Fjalla One', sans-serif;}
+
+input, select, textarea{
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0 0;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid{
+    border-color: green;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor:cell;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #fff;
+}
+
+button[type="reset"]:hover{
+    background-color: #ccc;
+    color: #ffff;
+}
