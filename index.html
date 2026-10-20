@@ -39,10 +39,12 @@
                 <input type="email" id="Email" name="userEmail" required>
                 <br>
                 <label for="PhoneNumber">Telefone</label>
-                <input type="tel" id="PhoneNumber" n    ame="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD+número S/ Espaços/traços/Hífen">
+                <input type="tel" id="PhoneNumber" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD+número S/ Espaços/traços/Hífen" aria-describedby="PhoneNumberdesc">
+                <small id="PhoneNumberdesc">Preencher com o seguinte padrão o campo telefone: DDD+número sem espaços, traços e hífens</small>
                 <br>
                 <label for="Image">Upload de Foto</label>
-                <input type="file" id="Image" accept="image/*" name="userImage">
+                <input type="file" id="Image" accept="image/*" name="userImage" aria-describedby="descimage">
+                <small id="descimage">Fazer upload de imagens JPN ou PJN</small>
                 <br>
             </fieldset>
             <!--PERFIL-->
