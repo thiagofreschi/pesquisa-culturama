@@ -38,10 +38,12 @@
                 <label for="Email">Email</label>
                 <input type="email" id="Email" name="userEmail" required>
                 <br>
+                <!--Adicionando aria-describedby para melhorar acessibilidade-->
                 <label for="PhoneNumber">Telefone</label>
                 <input type="tel" id="PhoneNumber" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD+número S/ Espaços/traços/Hífen" aria-describedby="PhoneNumberdesc">
                 <small id="PhoneNumberdesc">Preencher com o seguinte padrão o campo telefone: DDD+número sem espaços, traços e hífens</small>
                 <br>
+                <!--Adicionando aria-describedby para melhorar acessibilidade-->
                 <label for="Image">Upload de Foto</label>
                 <input type="file" id="Image" accept="image/*" name="userImage" aria-describedby="descimage">
                 <small id="descimage">Fazer upload de imagens JPN ou PJN</small>
@@ -176,6 +178,7 @@
                 <input type="checkbox" name="email" id="result" value="Envio por email">
                 <label for="result">Desejo receber os resultados por email</label>
             </fieldset>
+            <!--Adicionando aria-label para melhorar acessibilidade-->
             <button type="submit" aria-label="Envia dados do formulário">Enviar</button>
             <button type="reset" aria-label="Limpa os dados do formulário">Limpar</button>
         </form>
